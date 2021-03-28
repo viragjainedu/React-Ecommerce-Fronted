@@ -1,4 +1,5 @@
 import React from 'react';
+import Event from '../components/Event';
 
 class Events extends React.Component{
     render(){
@@ -234,174 +235,12 @@ class Events extends React.Component{
                 <div className="row">
                   <div className="col-lg-8">
                     <div className="events-box">
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">22</span>
-                                <span className="date-month">Oct</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 6:00 am - 12:00 pm
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">Summer High School Journalism Camp Registration Form</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events7.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">14</span>
-                                <span className="date-month">Dec</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 2:00 am - 5:00 am
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">Board of Regents Campus Live and Community Forum</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events6.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">17</span>
-                                <span className="date-month">Dec</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 2:00 am - 8:00 am
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">May Professional Development Diversity and Inclusion Series</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events5.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">22</span>
-                                <span className="date-month">Oct</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 6:00 am - 12:00 pm
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">Summer High School Journalism Camp Registration Form</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events4.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">14</span>
-                                <span className="date-month">Dec</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 2:00 am - 5:00 am
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">Board of Regents Campus Live and Community Forum</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events1.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">17</span>
-                                <span className="date-month">Dec</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 2:00 am - 8:00 am
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">May Professional Development Diversity and Inclusion Series</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events2.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="events-post">
-                        <div className="event-inner-content">
-                          <div className="top-part">
-                            <div className="date-holder">
-                              <div className="date">
-                                <span className="date-day">22</span>
-                                <span className="date-month">Oct</span>
-                              </div>
-                            </div>
-                            <div className="content">
-                              <div className="event-meta">
-                                <span className="event-meta-piece start-time">
-                                  <i className="material-icons">access_time</i> 6:00 am - 12:00 pm
-                                </span>
-                                <span className="event-meta-piece location">
-                                  <i className="material-icons">location_on</i> New York , US of America
-                                </span>
-                              </div>
-                              <h2 className="title"><a href="single-event.html">Summer High School Journalism Camp Registration Form</a></h2>
-                            </div>
-                            <a href="single-event.html" className="events-image"><img src="upload/events/events3.jpg" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
+                      <Event/>
+                      <Event/>
+                      <Event/>
+                      <Event/>
+                      <Event/>
+                      
                     </div>
                   </div>
                   <div className="col-lg-4">

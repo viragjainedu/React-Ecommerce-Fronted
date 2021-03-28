@@ -20,21 +20,14 @@ import Checkout from './pages/checkout';
 import Event from './pages/event';
 import Pricing from './pages/pricing';
 import SingleTeacher from './pages/singe-teacher';
-import Portfolo from './pages/portfolio';
+import Portfolio from './pages/portfolio';
 import SingleProject from './pages/single-project';
 import BlogGridLeftsidebar from './pages/blog-grid-leftsidebar';
 import Contact from './pages/contact';
 
-
-
-
-
-
-
 class App extends Component {
   render(){
   return (
-<<<<<<< HEAD
     <BrowserRouter>
       <Switch>
         <Route exact={true} path="/" component={Home} />
@@ -45,31 +38,18 @@ class App extends Component {
         <Route exact path="/SingleEvent" component={SingleEvent} />
         <Route exact path="/SinglePost" component={SinglePost} />
         <Route exact path="/Teachers" component={Teachers} />
+        <Route exact path="/Checkout" component={Checkout} />
+        <Route exact path="/Event" component={Event} />
+        <Route exact path="/Pricing" component={Pricing} />
+        <Route exact path="/SingleTeacher" component={SingleTeacher} />
+        <Route exact path="/Portfolio" component={Portfolio} />
+        <Route exact path="/SingleProject" component={SingleProject} />
+        <Route exact path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
+        <Route exact path="/Contact" component={Contact} />
       </Switch>
     </BrowserRouter>
     );
   }
-=======
-    // <Home/>
-    // <Cart/>
-    // <Courses/>
-    // <BlogGrid4/>
-    // <SingleCourse/>
-    // <SingleEvent/>
-    // <SinglePost/>
-    // <Teachers/>
-
-    // <Checkout/>
-      // <Event/>
-      // <Pricing/>
-      // <SingleTeacher/>
-      // <Portfolo/>
-      // <SingleProject/>
-      // <BlogGridLeftsidebar/>
-      <Contact/>
-
-  );
->>>>>>> 8e9328dfc9c361bc08ba0551c91814555ecf2eab
 }
 
 export default App;

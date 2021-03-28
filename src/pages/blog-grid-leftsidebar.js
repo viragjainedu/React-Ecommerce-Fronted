@@ -1,4 +1,5 @@
 import React from 'react';
+import Blog from '../components/Blog';
 
 class BlogGridLeftsidebar extends React.Component{
     render(){
@@ -275,112 +276,25 @@ class BlogGridLeftsidebar extends React.Component{
                     </div>
                   </div>
                 </div>
+
                 <div className="col-lg-8 col-md-7">
                   <div className="blog-box">
                     <div className="row">
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-1.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Academics</a>
-                            <h2><a href="single-post.html">Couple Of Happy College Students Graduated</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-2.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Government</a>
-                            <h2><a href="single-post.html">Tips to Developing a Quality Discussion</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-3.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Design</a>
-                            <h2><a href="single-post.html">Reflections for the Season of Advent</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-4.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Business</a>
-                            <h2><a href="single-post.html">It’s Wonderful to see the Friendships that Develop</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-5.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Academics</a>
-                            <h2><a href="single-post.html">Couple Of Happy College Students Graduated</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-6.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Government</a>
-                            <h2><a href="single-post.html">Tips to Developing a Quality Discussion</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-7.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Design</a>
-                            <h2><a href="single-post.html">Reflections for the Season of Advent</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="blog-post">
-                          <a href="single-post.html"><img src="upload/blog/blog-image-8.jpg" alt="" /></a>
-                          <div className="post-content">
-                            <a className="category" href="#">Business</a>
-                            <h2><a href="single-post.html">It’s Wonderful to see the Friendships that Develop</a></h2>
-                            <div className="post-meta date">
-                              <i className="material-icons">access_time</i> June 13, 2018
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
+                    <Blog/>
+                    <Blog/>
+                    <Blog/>
+                    <Blog/>
+                    <Blog/>
+
+                    </div>              
                     <ul className="page-pagination">
                       <li><a href="#"><i className="fa fa-angle-left" /></a></li>
                       <li><a href="#" className="active">1</a></li>
                       <li><a href="#">2</a></li>
                       <li><a href="#"><i className="fa fa-angle-right" /></a></li>
                     </ul>
+
                   </div>
                 </div>
               </div>
