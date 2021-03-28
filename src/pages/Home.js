@@ -1,12 +1,13 @@
 import React from 'react';
-
-
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 
 class Home extends React.Component{
     render(){
         return(
-
-          
+          <Router>
       <div id="container">
       {/* Header
       ================================================== */}
@@ -219,7 +220,7 @@ class Home extends React.Component{
               <h1>Trending Collection</h1>
             </div>
             <div className="right-part">
-              <a className="button-one" href="#">View All Courses</a>
+            <Link to="/Courses">View All Courses</Link>
             </div>
           </div>
           <div className="collection-box">
@@ -857,8 +858,7 @@ class Home extends React.Component{
       </footer>
       {/* End footer */}
     </div>      
-    
-    
+    </Router>    
         )
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
+import Course from '../components/Course'
 
-class Cart extends React.Component{
+class Courses extends React.Component{
     render(){
         return(
 
@@ -222,6 +223,7 @@ class Cart extends React.Component{
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
+               
                 <div className="courses-top-bar">
                   <div className="courses-view">
                     <a href="courses.html" className="grid-btn active">
@@ -239,313 +241,19 @@ class Cart extends React.Component{
                     </button>
                   </form>
                 </div>
+
                 <div className="row">
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/1.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Introduction Web Design with HTML</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">5.00</span>
-                                <span className="votes-number">1 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Duha Samra</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>64</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£244</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/2.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Special Education Needs Teaching</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">3.50</span>
-                                <span className="votes-number">2 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Leon Redding</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>134</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£74.99</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/3.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Environmental Science BTEC Course</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">No Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Linda Castello</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>0</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£18.99</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/4.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Distance Learning MBA Management</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">4.50</span>
-                                <span className="votes-number">2 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Michael Arnett</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>263</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£29.99</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/5.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Introduction Web Design with HTML</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">5.00</span>
-                                <span className="votes-number">1 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Duha Samra</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>64</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£244</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/6.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Special Education Needs Teaching</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">3.50</span>
-                                <span className="votes-number">2 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Leon Redding</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>134</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£74.99</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/7.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Environmental Science BTEC Course</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">No Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Linda Castello</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>0</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£18.99</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/8.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Distance Learning MBA Management</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">4.50</span>
-                                <span className="votes-number">2 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Michael Arnett</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>263</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£29.99</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="course-post">
-                      <div className="course-thumbnail-holder">
-                        <a href="single-course.html">
-                          <img src="./assets/upload/courses/9.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div className="course-content-holder">
-                        <div className="course-content-main">
-                          <h2 className="course-title">
-                            <a href="single-course.html">Introduction Web Design with HTML</a>
-                          </h2>
-                          <div className="course-rating-teacher">
-                            <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                              <span style={{width: '100%'}}>
-                                <span className="rating">5.00</span>
-                                <span className="votes-number">1 Votes</span>
-                              </span>
-                            </div>
-                            <a href="#" className="course-loop-teacher">Duha Samra</a>
-                          </div>
-                        </div>
-                        <div className="course-content-bottom">
-                          <div className="course-students">
-                            <i className="material-icons">group</i>
-                            <span>64</span>
-                          </div>
-                          <div className="course-price">
-                            <span>£244</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    <Course/>
+                    <Course/>
+                    <Course/>
+                    <Course/>
+                    <Course/>
+                    <Course/>
+                    <Course/>
+                  
                 </div>
               </div>
+              
               <div className="col-lg-4">
                 <div className="sidebar">
                   <div className="category-widget widget">
@@ -677,4 +385,4 @@ class Cart extends React.Component{
         )
     }
 }
-export default Cart;
+export default Courses;

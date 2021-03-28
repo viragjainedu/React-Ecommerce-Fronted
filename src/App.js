@@ -1,4 +1,13 @@
+import React from "react";
+import { Component } from "react";
+
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from "react-router-dom";
   
+
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Courses from './pages/Courses';
@@ -8,19 +17,24 @@ import SingleEvent from './pages/single-event';
 import SinglePost from './pages/single-post';
 import Teachers from './pages/teachers';
 
-import './App.css';
 
-function App() {
+class App extends Component {
+  render(){
   return (
-    // <Home/>
-    // <Cart/>
-    // <Courses/>
-    // <BlogGrid4/>
-    // <SingleCourse/>
-    // <SingleEvent/>
-    // <SinglePost/>
-    <Teachers/>
-  );
+    <BrowserRouter>
+      <Switch>
+        <Route exact={true} path="/" component={Home} />
+        <Route exact path="/Courses" component={Courses} />
+        <Route exact path="/Cart" component={Cart} />
+        <Route exact path="/BlogGrid4" component={BlogGrid4} />
+        <Route exact path="/SingleCourse" component={SingleCourse} />
+        <Route exact path="/SingleEvent" component={SingleEvent} />
+        <Route exact path="/SinglePost" component={SinglePost} />
+        <Route exact path="/Teachers" component={Teachers} />
+      </Switch>
+    </BrowserRouter>
+    );
+  }
 }
 
 export default App;
