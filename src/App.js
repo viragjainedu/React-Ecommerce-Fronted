@@ -16,11 +16,25 @@ import SingleCourse from './pages/single-course';
 import SingleEvent from './pages/single-event';
 import SinglePost from './pages/single-post';
 import Teachers from './pages/teachers';
+import Checkout from './pages/checkout';
+import Event from './pages/event';
+import Pricing from './pages/pricing';
+import SingleTeacher from './pages/singe-teacher';
+import Portfolo from './pages/portfolio';
+import SingleProject from './pages/single-project';
+import BlogGridLeftsidebar from './pages/blog-grid-leftsidebar';
+import Contact from './pages/contact';
+
+
+
+
+
 
 
 class App extends Component {
   render(){
   return (
+<<<<<<< HEAD
     <BrowserRouter>
       <Switch>
         <Route exact={true} path="/" component={Home} />
@@ -35,6 +49,27 @@ class App extends Component {
     </BrowserRouter>
     );
   }
+=======
+    // <Home/>
+    // <Cart/>
+    // <Courses/>
+    // <BlogGrid4/>
+    // <SingleCourse/>
+    // <SingleEvent/>
+    // <SinglePost/>
+    // <Teachers/>
+
+    // <Checkout/>
+      // <Event/>
+      // <Pricing/>
+      // <SingleTeacher/>
+      // <Portfolo/>
+      // <SingleProject/>
+      // <BlogGridLeftsidebar/>
+      <Contact/>
+
+  );
+>>>>>>> 8e9328dfc9c361bc08ba0551c91814555ecf2eab
 }
 
 export default App;
