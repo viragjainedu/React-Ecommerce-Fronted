@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 class Header extends React.Component{
     render(){
         return(
@@ -44,7 +44,7 @@ class Header extends React.Component{
               <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
                   <a className="navbar-brand" href="index.html">
-                    <img src="images/logo.svg" alt="" />
+                    <img src="./assets/images/logo.svg" alt="" />
                   </a>
                   <a href="#" className="mobile-nav-toggle"> 
                     <span />
@@ -59,7 +59,7 @@ class Header extends React.Component{
                         <ul className="dropdown">
                           <li><a href="about.html">About Us</a></li>
                           <li><a href="pricing.html">Pricing Packages</a></li>
-                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
                           <li><a href="single-project.html">Portfolio Single</a></li>
                           <li><a href="teachers.html">Teachers</a></li>
                           <li><a href="single-teacher.html">Teacher Single</a></li>
@@ -106,7 +106,7 @@ class Header extends React.Component{
                         </ul>
                       </li>
                       <li className="drop-link">
-                        <a href="courses.html">Courses</a>
+                        <a href="/Courses">Courses</a>
                       </li>
                       <li><a href="events.html">Events</a></li>
                       <li><a href="contact.html">Contact</a></li>
@@ -141,7 +141,7 @@ class Header extends React.Component{
                       <ul className="drop-level">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="pricing.html">Pricing Packages</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
                         <li><a href="single-project.html">Portfolio Single</a></li>
                         <li><a href="teachers.html">Teachers</a></li>
                         <li><a href="single-teacher.html">Teacher Single</a></li>

@@ -10,7 +10,7 @@ class Footer extends React.Component{
                   <div className="row">
                     <div className="col-lg-4 col-md-6">
                       <div className="footer-widget text-widget">
-                        <a href="index.html" className="footer-logo"><img src="images/logo_light.svg" alt="" /></a>
+                        <a href="index.html" className="footer-logo"><img src="./assets/images/logo_light.svg" alt="" /></a>
                         <p>We named our theme Studiare because to us,<br /> the best brands are simple ones. Brands thrive<br /> on their ability to be understood.</p>
                         <ul>
                           <li>
