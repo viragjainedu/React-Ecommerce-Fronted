@@ -11,10 +11,10 @@ class BlogGridLeftsidebar extends React.Component{
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/studiare-assets.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome/font-awesome.min.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/fonts/elegant-icons/style.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/fonts/iconfont/material-icons.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/fonts/font-awesome/font-awesome.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/fonts/elegant-icons/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/fonts/iconfont/material-icons.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
         {/* Container */}
         <div id="container">
           {/* Header

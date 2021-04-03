@@ -4,16 +4,7 @@ class Pricing extends React.Component{
     render(){
         return(
         <div>
-          <title>Studiare</title>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-          <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700&display=swap" rel="stylesheet" />
-          <link rel="stylesheet" href="css/studiare-assets.min.css" />
-          <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome/font-awesome.min.css" media="screen" />
-          <link rel="stylesheet" type="text/css" href="css/fonts/elegant-icons/style.css" media="screen" />
-          <link rel="stylesheet" type="text/css" href="css/fonts/iconfont/material-icons.css" media="screen" />
-          <link rel="stylesheet" type="text/css" href="css/style.css" />
+          
           {/* Container */}
           <div id="container">
             {/* Header
@@ -57,7 +48,7 @@ class Pricing extends React.Component{
               <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
                   <a className="navbar-brand" href="index.html">
-                    <img src="images/logo.svg" alt="" />
+                    <img src="./assets/images/logo.svg" alt="" />
                   </a>
                   <a href="#" className="mobile-nav-toggle"> 
                     <span />
@@ -337,7 +328,7 @@ class Pricing extends React.Component{
                   <div className="row">
                     <div className="col-lg-4 col-md-6">
                       <div className="footer-widget text-widget">
-                        <a href="index.html" className="footer-logo"><img src="images/logo_light.svg" alt="" /></a>
+                        <a href="index.html" className="footer-logo"><img src="./assets/images/logo_light.svg" alt="" /></a>
                         <p>We named our theme Studiare because to us,<br /> the best brands are simple ones. Brands thrive<br /> on their ability to be understood.</p>
                         <ul>
                           <li>
