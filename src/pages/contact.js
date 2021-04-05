@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 class Contact extends React.Component{
     render(){
         return(
@@ -17,7 +16,6 @@ class Contact extends React.Component{
           <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /> */}
           {/* Container */}
           <div id="container">
-            <Header/>
             {/* map section */}
             <div id="map" />
             {/* end map section */}
@@ -100,7 +98,6 @@ class Contact extends React.Component{
               </div>
             </section>
             {/* End contact-info section */}
-            <Footer/>
           </div>
           {/* End Container */}
         </div>

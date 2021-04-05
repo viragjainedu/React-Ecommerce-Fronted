@@ -25,11 +25,13 @@ import Portfolio from './pages/portfolio';
 import SingleProject from './pages/single-project';
 import BlogGridLeftsidebar from './pages/blog-grid-leftsidebar';
 import Contact from './pages/contact';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 class App extends Component {
   render(){
   return (
     <BrowserRouter forceRefresh={true}>
+      <Header/>
       <Switch>
         <Route exact={true} path="/" component={Home} />
         <Route  path="/Courses" component={Courses} />
@@ -50,6 +52,7 @@ class App extends Component {
         <Route component={Error} />
 
       </Switch>
+      <Footer/>
     </BrowserRouter>
     );
   }

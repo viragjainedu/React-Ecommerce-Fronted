@@ -6,15 +6,13 @@ import React from 'react';
 // } from "react-router-dom";
 import {Link} from "react-router-dom"
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 class Home extends React.Component{
     render(){
         return(
           // <Router>
       <div id="container">
-      <Header/>
 
     
       {/* collection-section 
@@ -461,7 +459,6 @@ class Home extends React.Component{
         </div>
       </section>
       {/* End testimonial section */}
-      <Footer/>
     </div>      
     // </Router>    
         )

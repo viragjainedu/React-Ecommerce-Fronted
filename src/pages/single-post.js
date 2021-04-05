@@ -1,14 +1,12 @@
 
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 
 class SinglePost extends React.Component{
     render(){
         return(
             <div id="container">
-            <Header/>
             {/* page-banner-section 
                 ================================================== */}
             <section className="page-banner-section">
@@ -223,7 +221,6 @@ class SinglePost extends React.Component{
               </div>
             </section>
             {/* End blog section */}
-            <Footer/>
           </div>
         )
     }

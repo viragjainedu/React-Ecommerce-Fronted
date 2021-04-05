@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 class Portfolio extends React.Component{
     render(){
         return(
@@ -8,7 +7,6 @@ class Portfolio extends React.Component{
           
           {/* Container */}
           <div id="container">
-            <Header/>
             {/* page-banner-section 
               ================================================== */}
             <section className="page-banner-section">
@@ -174,7 +172,6 @@ class Portfolio extends React.Component{
               </div>
             </section>
             {/* End portfolio section */}
-            <Footer/>
           </div>
           {/* End Container */}
         </div>

@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 class SingleTeacher extends React.Component{
     render(){
         return(
@@ -8,7 +7,6 @@ class SingleTeacher extends React.Component{
         
         {/* Container */}
         <div id="container">
-          <Header/>
           {/* page-banner-section 
 			================================================== */}
           <section className="page-banner-section">
@@ -156,7 +154,6 @@ class SingleTeacher extends React.Component{
             </div>
           </section>
           {/* End teachers section */}
-          <Footer/>
         </div>
         {/* End Container */}
       </div>
