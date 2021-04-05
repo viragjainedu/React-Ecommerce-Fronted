@@ -13,8 +13,8 @@ class Pricing extends React.Component{
               <div className="container">
                 <h1>Pricing Packages</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="pricing.html">Pricing Packages</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="Pricing">Pricing Packages</a></li>
                 </ul>
               </div>
             </section>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Blog from '../components/Blog';
 
 
 
@@ -27,18 +28,8 @@ class BlogGrid4 extends React.Component{
   <div className="container">
     <div className="blog-box">
       <div className="row">
-        <div className="col-lg-3 col-md-6">
-          <div className="blog-post">
-            <a href="single-post.html"><img src="./assets/upload/blog/blog-image-1.jpg" alt="" /></a>
-            <div className="post-content">
-              <a className="category" href="#">Academics</a>
-              <h2><a href="single-post.html">Couple Of Happy College Students Graduated</a></h2>
-              <div className="post-meta date">
-                <i className="material-icons">access_time</i> June 13, 2018
-              </div>
-            </div>
-          </div>
-        </div>
+        <Blog/>
+        <Blog/>
         <div className="col-lg-3 col-md-6">
           <div className="blog-post">
             <a href="single-post.html"><img src="./assets/upload/blog/blog-image-2.jpg" alt="" /></a>

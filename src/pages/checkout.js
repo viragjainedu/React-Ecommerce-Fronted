@@ -13,8 +13,8 @@ class Checkout extends React.Component{
               <div className="container">
                 <h1>Checkout</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Studiare</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
+                  <li><a href="/">Studiare</a></li>
+                  <li><a href="/Checkout">Checkout</a></li>
                 </ul>
               </div>
             </section>

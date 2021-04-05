@@ -14,8 +14,8 @@ class Events extends React.Component{
               <div className="container">
                 <h1>Events</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Studiare</a></li>
-                  <li><a href="events.html">Events</a></li>
+                  <li><a href="/">Studiare</a></li>
+                  <li><a href="Event">Events</a></li>
                 </ul>
               </div>
             </section>

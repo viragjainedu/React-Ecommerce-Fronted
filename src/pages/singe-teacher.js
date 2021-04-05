@@ -13,9 +13,9 @@ class SingleTeacher extends React.Component{
             <div className="container">
               <h1>Leslie Williams</h1>
               <ul className="page-depth">
-                <li><a href="index.html">Studiare</a></li>
-                <li><a href="teachers.html">Teachers</a></li>
-                <li><a href="single-teacher.html">Leslie Williams</a></li>
+                <li><a href="/">Studiare</a></li>
+                <li><a href="/Teachers">Teachers</a></li>
+                <li><a href="/SingleTeacher">Leslie Williams</a></li>
               </ul>
             </div>
           </section>

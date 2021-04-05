@@ -57,7 +57,7 @@ class Header extends React.Component{
                       <li className="drop-link">
                         <Link to={"/"}>Pages <i className="fa fa-angle-down" /></Link>
                         <ul className="dropdown">
-                          <li><Link to="/Portfolio">Portfolio</Link></li>
+                          <li><Link to={"/Portfolio"}>Portfolio</Link></li>
                           <li><Link to={"/Teachers"}>Teachers</Link></li>
                           <li><Link to={"/SingleTeacher"}>Teacher Single</Link></li>
                           <li className="drop-link">

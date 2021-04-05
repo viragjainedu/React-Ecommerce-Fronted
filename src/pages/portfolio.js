@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from '../components/Project';
 
 class Portfolio extends React.Component{
     render(){
@@ -13,8 +14,8 @@ class Portfolio extends React.Component{
               <div className="container">
                 <h1>Portfolio</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/Portfolio">Portfolio</a></li>
                 </ul>
               </div>
             </section>
@@ -40,6 +41,9 @@ class Portfolio extends React.Component{
                   </div>
                   <div className="col-lg-9 col-md-8">
                     <div className="portfolio-box iso-call">
+                    <Project/>
+                    <Project/>
+
                       <div className="project-post university">
                         <div className="inner-project">
                           <div className="image-holder">

@@ -13,9 +13,9 @@ class SingleProject extends React.Component{
               <div className="container">
                 <h1>Nature of University</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="single-project.html">Nature of University</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="Portfolio">Portfolio</a></li>
+                  <li><a href="SingleProject">Nature of University</a></li>
                 </ul>
               </div>
             </section>
