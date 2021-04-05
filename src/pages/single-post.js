@@ -15,10 +15,10 @@ class SinglePost extends React.Component{
               <div className="container">
                 <h1>Academics</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Studiare</a></li>
-                  <li><a href="blog.html">News</a></li>
-                  <li><a href="blog-grid-3.html">Academics</a></li>
-                  <li><a href="single-post.html">Couple Of Happy College Students Graduated</a></li>
+                  <li><a href="/">Studiare</a></li>
+                  <li><a href="/BlogGrid4">News</a></li>
+                  <li><a href="/BlogGrid4">Academics</a></li>
+                  <li><a href="/SinglePost">Couple Of Happy College Students Graduated</a></li>
                 </ul>
               </div>
             </section>
@@ -43,7 +43,7 @@ class SinglePost extends React.Component{
                             <i className="material-icons">folder_open</i><a href="#">Academics</a>, <a href="#">School</a>
                           </div>
                         </div>
-                        <a href="single-post.html"><img src="./assets/upload/blog/blog-image-1.jpg" alt="" /></a>
+                        <a href="/SinglePost"><img src="./assets/upload/blog/blog-image-1.jpg" alt="" /></a>
                         <div className="post-content">
                           <p>CSS. It’s a web designer’s playpen. With so many colors, type settings, layout options, and responsive possibilities, it’s easy to turn a stylesheet into a million line nightmare. However, with a few simple actions you can clean up the mess so the CSS works with you, not against you. A few weeks ago, frontend developer Julie Cameron came through our virtual Treehouse office and bestowed some wisdom we still can’t shake. So now I’m sharing it with you all!</p>
                           <h2>It’s only natural. Entanglement happens.</h2>
@@ -193,7 +193,7 @@ class SinglePost extends React.Component{
                       </div>
                       <div className="category-widget widget">
                         <h2>Categories</h2>
-                        <ul className="category-list">
+                        <ul className="category-list">  
                           <li><a href="#">Academics</a></li>
                           <li><a href="#">Advertisement</a></li>
                           <li><a href="#">Business</a></li>

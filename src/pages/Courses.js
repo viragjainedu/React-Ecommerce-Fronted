@@ -4,6 +4,14 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 class Courses extends React.Component{
+  constructor(props){
+    super(props);
+      this.state={
+        coursename : "How to make babies" ,
+        teacher : "Virag Jain"
+      };
+  }
+    
     render(){
         return(
 
@@ -41,7 +49,11 @@ class Courses extends React.Component{
                 </div>
 
                 <div className="row">
-                    <Course/>
+                
+
+                  {/* {this.state.coursename} */}
+                  {/* {this.state.teacher} */}
+                    <Course {...(this.state)} />
                     <Course/>
                     <Course/>
                     <Course/>

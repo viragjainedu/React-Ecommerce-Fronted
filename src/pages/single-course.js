@@ -4,6 +4,11 @@ import Footer from '../components/Footer';
 
 
 class Cart extends React.Component{
+  constructor(props){
+    super(props);
+  
+  }
+
     render(){
         return(
 
@@ -40,7 +45,7 @@ class Cart extends React.Component{
                           <span className="label">Teacher</span>
                           <div className="value">
                             <a href="/SingleTeacher">Michael Arnett</a>
-                          </div>
+                          </div> 
                         </div>
                       </div>
                       <div className="course-category before-gallery-unit">

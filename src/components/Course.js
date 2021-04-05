@@ -1,6 +1,13 @@
 import React from 'react';
 
 class Course extends React.Component{
+  constructor(props){
+    super(props);
+    // console.log(this.props)  
+    // console.log(this.props.coursename)  
+    // console.log(this.props.teacher)  
+    //here we will call api 
+  }
     render(){
         return(
             <div className="col-lg-4 col-md-6 col-sm-6">
@@ -13,7 +20,7 @@ class Course extends React.Component{
                       <div className="course-content-holder">
                         <div className="course-content-main">
                           <h2 className="course-title">
-                            <a href="/SingleCourse">Special Education Needs Teaching</a>
+                            <a href="/SingleCourse">{this.props.coursename}</a>
                           </h2>
                           <div className="course-rating-teacher">
                             <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
@@ -22,7 +29,7 @@ class Course extends React.Component{
                                 <span className="votes-number">2 Votes</span>
                               </span>
                             </div>
-                            <a href="#" className="course-loop-teacher">Leon Redding</a>
+                            <a href="#" className="course-loop-teacher">{this.props.teacher}</a>
                           </div>
                         </div>
                         <div className="course-content-bottom">
