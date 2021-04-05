@@ -1,7 +1,6 @@
 import React from 'react';
 import Course from '../components/Course';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 class Courses extends React.Component{
   constructor(props){
@@ -16,7 +15,6 @@ class Courses extends React.Component{
         return(
 
       <div id="container">
-        <Header/>
         {/* page-banner-section 
 			================================================== */}
         <section className="page-banner-section">
@@ -99,7 +97,6 @@ class Courses extends React.Component{
           </div>
         </section>
         {/* End courses section */}
-        <Footer/>
       </div>
     
         )

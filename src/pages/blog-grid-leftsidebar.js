@@ -1,7 +1,6 @@
 import React from 'react';
 import Blog from '../components/Blog';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 class BlogGridLeftsidebar extends React.Component{
     render(){
@@ -10,7 +9,6 @@ class BlogGridLeftsidebar extends React.Component{
         
         {/* Container */}
         <div id="container">
-          <Header/>
           {/* page-banner-section 
 			================================================== */}
           <section className="page-banner-section">
@@ -96,7 +94,6 @@ class BlogGridLeftsidebar extends React.Component{
             </div>
           </section>
           {/* End blog section */}
-          <Footer/>
         </div>
         {/* End Container */}
       </div>

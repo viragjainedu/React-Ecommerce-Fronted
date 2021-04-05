@@ -1,7 +1,6 @@
 import React from 'react';
 import Event from '../components/Event';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 class Events extends React.Component{
     render(){
         return(
@@ -9,15 +8,14 @@ class Events extends React.Component{
           
           {/* Container */}
           <div id="container">
-            <Header/>
             {/* page-banner-section 
               ================================================== */}
             <section className="page-banner-section">
               <div className="container">
                 <h1>Events</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Studiare</a></li>
-                  <li><a href="events.html">Events</a></li>
+                  <li><a href="/">Studiare</a></li>
+                  <li><a href="Event">Events</a></li>
                 </ul>
               </div>
             </section>
@@ -59,7 +57,6 @@ class Events extends React.Component{
               </div>
             </section>
             {/* End events section */}
-            <Footer/>
           </div>
           {/* End Container */}
         </div>

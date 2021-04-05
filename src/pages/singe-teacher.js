@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 class SingleTeacher extends React.Component{
     render(){
         return(
@@ -8,16 +7,15 @@ class SingleTeacher extends React.Component{
         
         {/* Container */}
         <div id="container">
-          <Header/>
           {/* page-banner-section 
 			================================================== */}
           <section className="page-banner-section">
             <div className="container">
               <h1>Leslie Williams</h1>
               <ul className="page-depth">
-                <li><a href="index.html">Studiare</a></li>
-                <li><a href="teachers.html">Teachers</a></li>
-                <li><a href="single-teacher.html">Leslie Williams</a></li>
+                <li><a href="/">Studiare</a></li>
+                <li><a href="/Teachers">Teachers</a></li>
+                <li><a href="/SingleTeacher">Leslie Williams</a></li>
               </ul>
             </div>
           </section>
@@ -156,7 +154,6 @@ class SingleTeacher extends React.Component{
             </div>
           </section>
           {/* End teachers section */}
-          <Footer/>
         </div>
         {/* End Container */}
       </div>

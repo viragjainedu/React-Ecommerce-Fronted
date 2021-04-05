@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 class SingleProject extends React.Component{
     render(){
         return(
@@ -8,16 +7,15 @@ class SingleProject extends React.Component{
           
           {/* Container */}
           <div id="container">
-            <Header/>
             {/* page-banner-section 
               ================================================== */}
             <section className="page-banner-section">
               <div className="container">
                 <h1>Nature of University</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="single-project.html">Nature of University</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="Portfolio">Portfolio</a></li>
+                  <li><a href="SingleProject">Nature of University</a></li>
                 </ul>
               </div>
             </section>
@@ -71,7 +69,6 @@ class SingleProject extends React.Component{
               </div>
             </section>
             {/* End portfolio section */}
-            <Footer/>
           </div>
           {/* End Container */}
         </div>

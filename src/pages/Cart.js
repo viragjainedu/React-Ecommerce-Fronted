@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 
 class Cart extends React.Component{
@@ -9,7 +8,6 @@ class Cart extends React.Component{
 
             
       <div id="container">
-      <Header/>
       {/* page-banner-section 
           ================================================== */}
       <section className="page-banner-section">
@@ -113,7 +111,6 @@ class Cart extends React.Component{
         </div>
       </section>
       {/* End cart section */}
-      <Footer/>
     </div>
     
         )

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Project from '../components/Project';
+
 class Portfolio extends React.Component{
     render(){
         return(
@@ -8,15 +8,14 @@ class Portfolio extends React.Component{
           
           {/* Container */}
           <div id="container">
-            <Header/>
             {/* page-banner-section 
               ================================================== */}
             <section className="page-banner-section">
               <div className="container">
                 <h1>Portfolio</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/Portfolio">Portfolio</a></li>
                 </ul>
               </div>
             </section>
@@ -42,6 +41,9 @@ class Portfolio extends React.Component{
                   </div>
                   <div className="col-lg-9 col-md-8">
                     <div className="portfolio-box iso-call">
+                    <Project/>
+                    <Project/>
+
                       <div className="project-post university">
                         <div className="inner-project">
                           <div className="image-holder">
@@ -174,7 +176,6 @@ class Portfolio extends React.Component{
               </div>
             </section>
             {/* End portfolio section */}
-            <Footer/>
           </div>
           {/* End Container */}
         </div>
