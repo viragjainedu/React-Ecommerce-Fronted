@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
-class Cart extends React.Component{
+class SinglePost extends React.Component{
     render(){
         return(
             <div id="container">
@@ -228,4 +228,4 @@ class Cart extends React.Component{
         )
     }
 }
-export default Cart;  
+export default SinglePost;  

@@ -4,7 +4,8 @@ import { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  BrowserRouter
 } from "react-router-dom";
   
 
@@ -28,7 +29,7 @@ import Contact from './pages/contact';
 class App extends Component {
   render(){
   return (
-    <Router>
+    <BrowserRouter forceRefresh={true}>
       <Switch>
         <Route exact={true} path="/" component={Home} />
         <Route  path="/Courses" component={Courses} />
@@ -39,7 +40,7 @@ class App extends Component {
         <Route exact path="/SinglePost" component={SinglePost} />
         <Route exact path="/Teachers" component={Teachers} />
         <Route exact path="/Checkout" component={Checkout} />
-        <Route exact path="/Event" component={Event} />
+        <Route exact path="/Events" component={Event} />
         <Route exact path="/Pricing" component={Pricing} />
         <Route exact path="/SingleTeacher" component={SingleTeacher} />
         <Route exact path="/Portfolio" component={Portfolio} />
@@ -49,7 +50,7 @@ class App extends Component {
         <Route component={Error} />
 
       </Switch>
-    </Router>
+    </BrowserRouter>
     );
   }
 }

@@ -16,8 +16,8 @@ class Cart extends React.Component{
         <div className="container">
           <h1>Cart</h1>
           <ul className="page-depth">
-            <li><a href="index.html">Studiare</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a href="/">Studiare</a></li>
+            <li><a href="Cart">Cart</a></li>
           </ul>
         </div>
       </section>
@@ -105,7 +105,7 @@ class Cart extends React.Component{
                       </tr>
                     </tbody>
                   </table>
-                  <a href="checkout.html" className="checkout-button">Proceed to checkout</a>
+                  <a href="/Checkout" className="checkout-button">Proceed to checkout</a>
                 </div>
               </div>
             </div>

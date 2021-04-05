@@ -15,9 +15,9 @@ class Cart extends React.Component{
           <div className="container">
             <h1>Distance Learning MBA Management</h1>
             <ul className="page-depth">
-              <li><a href="index.html">Studiare</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="single-course.html">Distance Learning MBA Management</a></li>
+              <li><a href="/">Studiare</a></li>
+              <li><a href="/Courses">Courses</a></li>
+              <li><a href="/SingleCourse">Distance Learning MBA Management</a></li>
             </ul>
           </div>
         </section>
@@ -39,7 +39,7 @@ class Cart extends React.Component{
                         <div className="info">
                           <span className="label">Teacher</span>
                           <div className="value">
-                            <a href="single-teacher.html">Michael Arnett</a>
+                            <a href="/SingleTeacher">Michael Arnett</a>
                           </div>
                         </div>
                       </div>
@@ -472,7 +472,7 @@ class Cart extends React.Component{
                     </div>
                     <div className="content">
                       <p>Donec tortor massa, dapibus sit amet massa ut, tincidunt dapibus neque. Morbi ac mauris lorem.</p>
-                      <a href="single-teacher.html" className="text-link">View full profile</a>
+                      <a href="/SingleTeacher" className="text-link">View full profile</a>
                     </div>
                   </div>
                 </div>

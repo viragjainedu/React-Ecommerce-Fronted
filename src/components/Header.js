@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+
 class Header extends React.Component{
     render(){
         return(
@@ -16,16 +18,14 @@ class Header extends React.Component{
                     <div className="col-md-6">
                       <div className="right-top-line">
                         <ul className="top-menu">
-                          <li><a href="#">Purchase Now</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="blog.html">News</a></li>
+                          <li><a href="/">About</a></li>
                         </ul>
                         <button className="search-icon">
                           <i className="material-icons open-search">search</i> 
                           <i className="material-icons close-search">close</i>
                         </button>
                         <button className="shop-icon">
-                          <i className="material-icons">shopping_cart</i>
+                          <a href="/Cart"><i className="material-icons">shopping_cart</i></a>
                           <span className="studiare-cart-number">0</span>
                         </button>
                       </div>
@@ -43,26 +43,23 @@ class Header extends React.Component{
               </form>
               <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
-                  <a className="navbar-brand" href="index.html">
+                  <Link className="navbar-brand" to={"/"}>
                     <img src="./assets/images/logo.svg" alt="" />
-                  </a>
-                  <a href="#" className="mobile-nav-toggle"> 
+                  </Link>
+                  <Link href="#" className="mobile-nav-toggle"> 
                     <span />
-                  </a>
+                  </Link>
                   <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                       <li className="drop-link">
-                        <a className="active" href="index.html">Home</a>
+                        <Link className="active" to="/">Home</Link>
                       </li>
                       <li className="drop-link">
-                        <a href="about.html">Pages <i className="fa fa-angle-down" /></a>
+                        <Link to={"/"}>Pages <i className="fa fa-angle-down" /></Link>
                         <ul className="dropdown">
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="pricing.html">Pricing Packages</a></li>
-                          <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
-                          <li><a href="single-project.html">Portfolio Single</a></li>
-                          <li><a href="teachers.html">Teachers</a></li>
-                          <li><a href="single-teacher.html">Teacher Single</a></li>
+                          <li><Link to="/Portfolio">Portfolio</Link></li>
+                          <li><Link to={"/Teachers"}>Teachers</Link></li>
+                          <li><Link to={"/SingleTeacher"}>Teacher Single</Link></li>
                           <li className="drop-link">
                             <a href="#">Submenu Level 1</a>
                             <ul className="dropdown level2">
@@ -70,21 +67,21 @@ class Header extends React.Component{
                               <li className="drop-link">
                                 <a href="#">Submenu Level 2</a>
                                 <ul className="dropdown level2">
-                                  <li><a href="#">Submenu Level 3</a></li>
-                                  <li><a href="#">Submenu Level 3</a></li>
+                                  <li><Link to={"/"}>Submenu Level 3</Link></li>
+                                  <li><Link to={"/"}>Submenu Level 3</Link></li>
                                 </ul>
                               </li>
                               <li><a href="#">Submenu Level 2</a></li>
                             </ul>
                           </li>
-                          <li><a href="cart.html">Shopping Cart</a></li>
-                          <li><a href="checkout.html">Checkout</a></li>
+                          <li><a href="/Cart">Shopping Cart</a></li>
+                          <li><a href="/Checkout">Checkout</a></li>
                         </ul>
                       </li>
                       <li className="drop-link">
-                        <a href="blog.html">Blog <i className="fa fa-angle-down" /></a>
+                        <a href="/BlogGrid4">Blog <i className="fa fa-angle-down" /></a>
                         <ul className="dropdown">
-                          <li className="drop-link">
+                          {/* <li className="drop-link">
                             <a href="blog-list.html">Blog List</a>
                             <ul className="dropdown level2">
                               <li><a href="blog-list-leftsidebar.html">Blog List - Sidebar Left</a></li>
@@ -100,18 +97,19 @@ class Header extends React.Component{
                               <li><a href="blog-grid-leftsidebar.html">Sidebar Left</a></li>
                               <li><a href="blog-grid-rightsidebar.html">Sidebar Right</a></li>
                             </ul>
-                          </li>
-                          <li><a href="blog.html">Blog Classic</a></li>
-                          <li><a href="single-post.html">Post Single</a></li>
+                          </li> */}
+                          <li><a href="/BlogGrid4">Blog Grid 4</a></li>
+                          <li><a href="/SinglePost">Post Single</a></li>
+                          <li><a href="/BlogGridLeftsidebar">BlogGridLeftsidebar</a></li>
                         </ul>
                       </li>
                       <li className="drop-link">
                         <a href="/Courses">Courses</a>
                       </li>
-                      <li><a href="events.html">Events</a></li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><Link to="/Events">Events</Link></li>
+                      <li><Link to="/Contact">Contact</Link></li>
                     </ul>
-                    <a href="#" className="register-modal-opener login-button"><i className="material-icons">perm_identity</i> Get Started</a>
+                    <a href="#" className="register-modal-opener login-button"><i className="material-icons">perm_identity</i>My Account</a>
                   </div>
                 </div>
               </nav>
@@ -125,7 +123,7 @@ class Header extends React.Component{
                   </form>
                 </div>
                 <div className="shopping-cart-box">
-                  <a className="shop-icon" href="cart.html">
+                  <a className="shop-icon" href="/Cart">
                     <i className="material-icons">shopping_cart</i>
                     Cart
                     <span className="studiare-cart-number">0</span>
@@ -134,20 +132,16 @@ class Header extends React.Component{
                 <nav className="mobile-nav">
                   <ul className="mobile-menu-list">
                     <li>
-                      <a href="index.html">Home</a>
+                      <a href="/">Home</a>
                     </li>
                     <li className="drop-link">
                       <a href="#">Pages</a>
                       <ul className="drop-level">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="pricing.html">Pricing Packages</a></li>
-                        <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
-                        <li><a href="single-project.html">Portfolio Single</a></li>
-                        <li><a href="teachers.html">Teachers</a></li>
-                        <li><a href="single-teacher.html">Teacher Single</a></li>
-                        <li><a href="cart.html">Shopping Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="single-teacher.html">Teacher Single</a></li>
+                        <li><a href="/">About Us</a></li>
+                        <li><a href="/Pricing">Pricing Packages</a></li>
+                        <li><Link to="/Portfolio">Portfolio</Link></li>
+                          <li><Link to={"/Teachers"}>Teachers</Link></li>
+                          <li><Link to={"/SingleTeacher"}>Teacher Single</Link></li>
                         <li className="drop-link">
                           <a href="#">Submenu Level 1</a>
                           <ul className="drop-level">
@@ -165,9 +159,9 @@ class Header extends React.Component{
                       </ul>
                     </li>
                     <li className="drop-link">
-                      <a href="blog.html">Blog</a>
+                      <a href="/BlogGrid4">Blog</a>
                       <ul className="drop-level">
-                        <li className="drop-link">
+                        {/* <li className="drop-link">
                           <a href="blog-list.html">Blog List</a>
                           <ul className="drop-level">
                             <li><a href="blog-list-leftsidebar.html">Blog List - Sidebar Left</a></li>
@@ -183,19 +177,20 @@ class Header extends React.Component{
                             <li><a href="blog-grid-leftsidebar.html">Sidebar Left</a></li>
                             <li><a href="blog-grid-rightsidebar.html">Sidebar Right</a></li>
                           </ul>
-                        </li>
-                        <li><a href="blog.html">Blog Classic</a></li>
-                        <li><a href="single-post.html">Post Single</a></li>
+                        </li> */}
+                        <li><a href="/BlogGrid4">Blog Grid 4</a></li>
+                        <li><a href="/SinglePost">Post Single</a></li>
+                        <li><a href="/BlogGridLeftsidebar">BlogGridLeftsidebar</a></li>
                       </ul>
                     </li>
                     <li>
-                      <a href="courses.html">Courses</a>
+                      <a href="/Courses">Courses</a>
                     </li>
                     <li>
-                      <a href="events.html">Events</a>
+                      <a href="/Events">Events</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="/Contact">Contact</a>
                     </li>
                   </ul>
                 </nav>

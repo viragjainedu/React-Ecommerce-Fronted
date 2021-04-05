@@ -157,14 +157,14 @@ class Home extends React.Component{
               <div className="col-lg-3 col-md-6">
                 <div className="course-post">
                   <div className="course-thumbnail-holder">
-                    <a href="single-course.html">
+                    <a href="/">
                       <img src="./assets/upload/courses/1.jpg" alt="" />
                     </a>
                   </div>
                   <div className="course-content-holder">
                     <div className="course-content-main">
                       <h2 className="course-title">
-                        <a href="single-course.html">Introduction Web Design with HTML</a>
+                        <a href="/">Introduction Web Design with HTML</a>
                       </h2>
                       <div className="course-rating-teacher">
                         <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
@@ -188,107 +188,7 @@ class Home extends React.Component{
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="course-post">
-                  <div className="course-thumbnail-holder">
-                    <a href="single-course.html">
-                      <img src="./assets/upload/courses/2.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div className="course-content-holder">
-                    <div className="course-content-main">
-                      <h2 className="course-title">
-                        <a href="single-course.html">Special Education Needs Teaching</a>
-                      </h2>
-                      <div className="course-rating-teacher">
-                        <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                          <span style={{width: '100%'}}>
-                            <span className="rating">3.50</span>
-                            <span className="votes-number">2 Votes</span>
-                          </span>
-                        </div>
-                        <a href="#" className="course-loop-teacher">Leon Redding</a>
-                      </div>
-                    </div>
-                    <div className="course-content-bottom">
-                      <div className="course-students">
-                        <i className="material-icons">group</i>
-                        <span>134</span>
-                      </div>
-                      <div className="course-price">
-                        <span>£74.99</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="course-post">
-                  <div className="course-thumbnail-holder">
-                    <a href="single-course.html">
-                      <img src="./assets/upload/courses/3.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div className="course-content-holder">
-                    <div className="course-content-main">
-                      <h2 className="course-title">
-                        <a href="single-course.html">Environmental Science BTEC Course</a>
-                      </h2>
-                      <div className="course-rating-teacher">
-                        <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                          <span style={{width: '100%'}}>
-                            <span className="rating">No Votes</span>
-                          </span>
-                        </div>
-                        <a href="#" className="course-loop-teacher">Linda Castello</a>
-                      </div>
-                    </div>
-                    <div className="course-content-bottom">
-                      <div className="course-students">
-                        <i className="material-icons">group</i>
-                        <span>0</span>
-                      </div>
-                      <div className="course-price">
-                        <span>£18.99</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="course-post">
-                  <div className="course-thumbnail-holder">
-                    <a href="single-course.html">
-                      <img src="./assets/upload/courses/4.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div className="course-content-holder">
-                    <div className="course-content-main">
-                      <h2 className="course-title">
-                        <a href="single-course.html">Distance Learning MBA Management</a>
-                      </h2>
-                      <div className="course-rating-teacher">
-                        <div className="star-rating has-ratings" title="Rated 5.00 out of 5">
-                          <span style={{width: '100%'}}>
-                            <span className="rating">4.50</span>
-                            <span className="votes-number">2 Votes</span>
-                          </span>
-                        </div>
-                        <a href="#" className="course-loop-teacher">Michael Arnett</a>
-                      </div>
-                    </div>
-                    <div className="course-content-bottom">
-                      <div className="course-students">
-                        <i className="material-icons">group</i>
-                        <span>263</span>
-                      </div>
-                      <div className="course-price">
-                        <span>£29.99</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -392,7 +292,7 @@ class Home extends React.Component{
                     <h2>Marketing, Media and Advertising</h2>
                     <p>About Studioare</p>
                   </div>
-                  <a className="video-link iframe" href="https://vimeo.com/97447862"><span><i className="fa fa-play" /></span></a>
+                  <a className="video-link iframe" href="/"><span><i className="fa fa-play" /></span></a>
                 </div>
                 <div className="row">
                   <div className="col-md-6">
@@ -401,7 +301,7 @@ class Home extends React.Component{
                       <div className="hover-post">
                         <h2>Limitless learning</h2>
                       </div>
-                      <a className="video-link iframe" href="https://vimeo.com/97447862"><span><i className="fa fa-play" /></span></a>
+                      <a className="video-link iframe" href="/"><span><i className="fa fa-play" /></span></a>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -410,7 +310,7 @@ class Home extends React.Component{
                       <div className="hover-post">
                         <h2>Learn by Doing</h2>
                       </div>
-                      <a className="video-link iframe" href="https://vimeo.com/97447862"><span><i className="fa fa-play" /></span></a>
+                      <a className="video-link iframe" href="/"><span><i className="fa fa-play" /></span></a>
                     </div>
                   </div>
                 </div>
@@ -472,56 +372,23 @@ class Home extends React.Component{
               <a className="button-one" href="#">View All Posts</a>
             </div>
           </div>
+
           <div className="news-box">
             <div className="row">
               <div className="col-lg-3 col-md-6">
                 <div className="blog-post">
-                  <a href="single-post.html"><img src="./assets/upload/blog/blog-image-1.jpg" alt="" /></a>
+                  <a href="/SinglePost"><img src="./assets/upload/blog/blog-image-1.jpg" alt="" /></a>
                   <div className="post-content">
                     <a className="category" href="#">Academics</a>
-                    <h2><a href="single-post.html">Couple Of Happy College Students Graduated</a></h2>
+                    <h2><a href="/SinglePost">Couple Of Happy College Students Graduated</a></h2>
                     <div className="post-meta date">
                       <i className="material-icons">access_time</i> June 13, 2018
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="blog-post">
-                  <a href="single-post.html"><img src="./assets/upload/blog/blog-image-2.jpg" alt="" /></a>
-                  <div className="post-content">
-                    <a className="category" href="#">Government</a>
-                    <h2><a href="single-post.html">Tips to Developing a Quality Discussion</a></h2>
-                    <div className="post-meta date">
-                      <i className="material-icons">access_time</i> June 13, 2018
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="blog-post">
-                  <a href="single-post.html"><img src="./assets/upload/blog/blog-image-3.jpg" alt="" /></a>
-                  <div className="post-content">
-                    <a className="category" href="#">Design</a>
-                    <h2><a href="single-post.html">Reflections for the Season of Advent</a></h2>
-                    <div className="post-meta date">
-                      <i className="material-icons">access_time</i> June 13, 2018
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6">
-                <div className="blog-post">
-                  <a href="single-post.html"><img src="./assets/upload/blog/blog-image-4.jpg" alt="" /></a>
-                  <div className="post-content">
-                    <a className="category" href="#">Business</a>
-                    <h2><a href="single-post.html">It’s Wonderful to see the Friendships that Develop</a></h2>
-                    <div className="post-meta date">
-                      <i className="material-icons">access_time</i> June 13, 2018
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
             </div>
           </div>
         </div>

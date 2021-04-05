@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
-class Cart extends React.Component{
+class BlogGrid4 extends React.Component{
     render(){
         return(
 
@@ -142,4 +142,4 @@ class Cart extends React.Component{
         )
     }
 }
-export default Cart;
+export default BlogGrid4;

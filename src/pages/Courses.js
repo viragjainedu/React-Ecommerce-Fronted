@@ -15,8 +15,8 @@ class Courses extends React.Component{
           <div className="container">
             <h1>Courses</h1>
             <ul className="page-depth">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="courses.html">Courses</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/Courses">Courses</a></li>
             </ul>
           </div>
         </section>
@@ -30,12 +30,6 @@ class Courses extends React.Component{
                
                 <div className="courses-top-bar">
                   <div className="courses-view">
-                    <a href="courses.html" className="grid-btn active">
-                      <i className="fa fa-th-large" aria-hidden="true" />
-                    </a>
-                    <a href="courses-list.html" className="grid-btn">
-                      <i className="fa fa-bars" aria-hidden="true" />
-                    </a>
                     <span>Showing all 9 results</span>
                   </div>
                   <form className="search-course">
@@ -74,31 +68,10 @@ class Courses extends React.Component{
                     <h2>Products</h2>
                     <ul className="products-list">
                       <li>
-                        <a href="single-course.html"><img src="./assets/upload/courses/thumb1.jpg" alt="" /></a>
+                        <a href="/SingleCourse"><img src="./assets/upload/courses/thumb1.jpg" alt="" /></a>
                         <div className="list-content">
-                          <h3><a href="single-course.html">Introduction Web Design with HTML</a></h3>
+                          <h3><a href="/SingleCourse">Introduction Web Design with HTML</a></h3>
                           <span>$244</span>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="single-course.html"><img src="./assets/upload/courses/thumb2.jpg" alt="" /></a>
-                        <div className="list-content">
-                          <h3><a href="single-course.html">Special Education Needs Teaching</a></h3>
-                          <span>$74.99</span>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="single-course.html"><img src="./assets/upload/courses/thumb3.jpg" alt="" /></a>
-                        <div className="list-content">
-                          <h3><a href="single-course.html">Environmental Science BTEC Course</a></h3>
-                          <span>$59.99</span>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="single-course.html"><img src="./assets/upload/courses/thumb4.jpg" alt="" /></a>
-                        <div className="list-content">
-                          <h3><a href="single-course.html">Distance Learning MBA Management</a></h3>
-                          <span>$17.88</span>
                         </div>
                       </li>
                     </ul>

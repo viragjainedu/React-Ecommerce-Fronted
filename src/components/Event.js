@@ -21,9 +21,9 @@ class Course extends React.Component{
                             <i className="material-icons">location_on</i> New York , US of America
                         </span>
                         </div>
-                        <h2 className="title"><a href="single-event.html">Summer High School Journalism Camp Registration Form</a></h2>
+                        <h2 className="title"><a href="/SingleEvent">Summer High School Journalism Camp Registration Form</a></h2>
                     </div>
-                    <a href="single-event.html" className="events-image"><img src="upload/events/events7.jpg" alt="" /></a>
+                    <a href="/SingleEvent" className="events-image"><img src="upload/events/events7.jpg" alt="" /></a>
                     </div>
                 </div>
                 </div>

@@ -16,9 +16,9 @@ class Cart extends React.Component{
               <div className="container">
                 <h1>Summer High School Journalism Camp Registration Form</h1>
                 <ul className="page-depth">
-                  <li><a href="index.html">Studiare</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="single-event.html">Summer High School Journalism Camp Registration Form</a></li>
+                  <li><a href="/">Studiare</a></li>
+                  <li><a href="/Events">Events</a></li>
+                  <li><a href="/SingleEvent">Summer High School Journalism Camp Registration Form</a></li>
                 </ul>
               </div>
             </section>
