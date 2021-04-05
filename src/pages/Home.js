@@ -1,14 +1,18 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
+
+// import {
+//   BrowserRouter as Router,
+//   Link
+// } from "react-router-dom";
+import {Link} from "react-router-dom"
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
 class Home extends React.Component{
     render(){
         return(
-          <Router>
+          // <Router>
       <div id="container">
       <Header/>
 
@@ -145,7 +149,7 @@ class Home extends React.Component{
               <h1>Popular Courses</h1>
             </div>
             <div className="right-part">
-              <a className="button-one" href="#">View All Courses</a>
+              <Link to={"/Courses"} className="button-one" href="#">View All Courses</Link>
             </div>
           </div>
           <div className="popular-courses-box">
@@ -592,7 +596,7 @@ class Home extends React.Component{
       {/* End testimonial section */}
       <Footer/>
     </div>      
-    </Router>    
+    // </Router>    
         )
     }
 }

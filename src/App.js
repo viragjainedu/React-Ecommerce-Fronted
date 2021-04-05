@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -28,11 +28,11 @@ import Contact from './pages/contact';
 class App extends Component {
   render(){
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
         <Route exact={true} path="/" component={Home} />
-        <Route exact path="/Courses" component={Courses} />
-        <Route exact path="/Cart" component={Cart} />
+        <Route  path="/Courses" component={Courses} />
+        <Route  path="/Cart" component={Cart} />
         <Route exact path="/BlogGrid4" component={BlogGrid4} />
         <Route exact path="/SingleCourse" component={SingleCourse} />
         <Route exact path="/SingleEvent" component={SingleEvent} />
@@ -46,8 +46,10 @@ class App extends Component {
         <Route exact path="/SingleProject" component={SingleProject} />
         <Route exact path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
         <Route exact path="/Contact" component={Contact} />
+        <Route component={Error} />
+
       </Switch>
-    </BrowserRouter>
+    </Router>
     );
   }
 }
