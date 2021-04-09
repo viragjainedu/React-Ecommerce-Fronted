@@ -15,7 +15,7 @@ class Course extends React.Component{
                       <div className="course-thumbnail-holder">
                         <a href="/SingleCourse">
                           <img src="./assets/upload/courses/2.jpg" alt="" />
-                        </a>
+                        </a>    
                       </div>
                       <div className="course-content-holder">
                         <div className="course-content-main">

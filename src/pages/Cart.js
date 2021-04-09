@@ -1,9 +1,15 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import addItems from '../redux/actions/addItems';
 
 
 
 class Cart extends React.Component{
-    render(){
+  constructor(props){
+    super(props);
+  }
+
+  render(){
         return(
 
             
@@ -41,7 +47,7 @@ class Cart extends React.Component{
                   <tbody>
                     <tr>
                       <td className="product-remove">
-                        <a href="#" className="remove">×</a>
+                        <a href="#" className="remove" onClick={() => {this.props.addItemHandler({product:""})}}>×</a>
                       </td>
                       <td className="product-thumbnail">
                         <a href="#"><img src="./assets/upload/courses/thumb1.jpg" alt="" /></a>
@@ -56,26 +62,6 @@ class Cart extends React.Component{
                         <input type="number" defaultValue={1} />
                       </td>
                       <td className="product-subtotal">$244.00</td>
-                    </tr>
-                    <tr>
-                      <td className="product-remove">
-                        <a href="#" className="remove">×</a>
-                      </td>
-                      <td className="product-thumbnail">
-                        <a href="#"><img src="./assets/upload/courses/thumb2.jpg" alt="" /></a>
-                      </td>
-                      <td className="product-name">
-                        <a href="#">Distance Learning MBA Management</a>
-                      </td>
-                      <td className="product-price">
-                        $29.99
-                      </td>
-                      <td className="product-quantity">
-                        <input type="number" defaultValue={1} />
-                      </td>
-                      <td className="product-subtotal">
-                        $29.99
-                      </td>
                     </tr>
                     <tr className="coupon-line"> 
                       <td colSpan={6} className="actions">
@@ -116,4 +102,17 @@ class Cart extends React.Component{
         )
     }
 }
-export default Cart;
+
+const mapStateToProps = state => {
+  return { 
+      newState : state._cartItems  
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return { 
+      addItemHandler:(item)=>dispatch(addItems(item))
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Cart);

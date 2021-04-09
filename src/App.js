@@ -37,7 +37,7 @@ class App extends Component {
         <Route  path="/Courses" component={Courses} />
         <Route  path="/Cart" component={Cart} />
         <Route exact path="/BlogGrid4" component={BlogGrid4} />
-        <Route exact path="/SingleCourse" component={SingleCourse} />
+        <Route exact path="/SingleCourse/:id" component={SingleCourse} />
         <Route exact path="/SingleEvent" component={SingleEvent} />
         <Route exact path="/SinglePost" component={SinglePost} />
         <Route exact path="/Teachers" component={Teachers} />
@@ -50,7 +50,6 @@ class App extends Component {
         <Route exact path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
         <Route exact path="/Contact" component={Contact} />
         <Route component={Error} />
-
       </Switch>
       <Footer/>
     </BrowserRouter>

@@ -10,10 +10,9 @@ class Courses extends React.Component{
         teacher : "Virag Jain"
       };
   }
-    
+      
     render(){
         return(
-
       <div id="container">
         {/* page-banner-section 
 			================================================== */}

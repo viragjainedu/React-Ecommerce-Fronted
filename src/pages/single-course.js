@@ -1,13 +1,20 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import addItems from '../redux/actions/addItems';
 
 
 
-class Cart extends React.Component{
+class SingleCourse extends React.Component{
   constructor(props){
     super(props);
-  
-  }
 
+    fetch('https://464181bb-4558-4cc3-ad85-40c6bd63422d.mock.pstmn.io/SingleCourse/1234')
+      .then(response => response.json())
+      .then(json => console.log(json))
+    
+      console.log(this.props.match.params.id)
+  }
+  
     render(){
         return(
 
@@ -16,11 +23,13 @@ class Cart extends React.Component{
 			================================================== */}
         <section className="page-banner-section">
           <div className="container">
-            <h1>Distance Learning MBA Management</h1>
+            
+            <h1>{this.props.match.params.id}</h1>
+            
             <ul className="page-depth">
               <li><a href="/">Studiare</a></li>
               <li><a href="/Courses">Courses</a></li>
-              <li><a href="/SingleCourse">Distance Learning MBA Management</a></li>
+              <li><a href="/SingleCourse/:id">Distance Learning MBA Management</a></li>
             </ul>
           </div>
         </section>
@@ -423,7 +432,7 @@ class Cart extends React.Component{
                       <span className="price-label">Price</span>
                       <span className="amount"><del>$39.99</del> $29.99</span>
                     </p>
-                    <a className="button-one" href="#">Take this course</a>
+                    <a className="button-one" href="#" onClick={()=>{this.props.addItemHandler({product:'How to make babies'})}}>Take this course</a>
                     <div className="product-meta-info-list">
                       <h3>Course Features</h3>
                       <div className="meta-info-unit">
@@ -490,4 +499,17 @@ class Cart extends React.Component{
         )
     }
 }
-export default Cart;
+
+const mapStateToProps = state => {
+  return { 
+      newState : state._cartItems  
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return { 
+      addItemHandler:(item)=>dispatch(addItems(item))
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(SingleCourse);

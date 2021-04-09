@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import {connect} from 'react-redux';
 
 class Header extends React.Component{
     render(){
@@ -26,7 +27,7 @@ class Header extends React.Component{
                         </button>
                         <button className="shop-icon">
                           <a href="/Cart"><i className="material-icons">shopping_cart</i></a>
-                          <span className="studiare-cart-number">0</span>
+                          <span className="studiare-cart-number">{this.props.newState.numberCart}</span>
                         </button>
                       </div>
                     </div>
@@ -201,4 +202,17 @@ class Header extends React.Component{
             )
     }
 }
-export default Header;
+
+const mapStateToProps = state => {
+  return { 
+      newState : state._cartItems  
+  }
+}
+
+// const mapDispatchToProps = dispatch => {
+//   return { 
+//       addItemHandler:(item)=>dispatch(addItems(item))
+//   }
+// }
+
+export default connect(mapStateToProps,null)(Header);
