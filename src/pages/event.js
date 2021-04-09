@@ -3,9 +3,19 @@ import Event from '../components/Event';
 
 class Events extends React.Component{
     render(){
+      var jobj= {
+        "Events":[
+          {"Title": "Summer High School Journalism Camp Registration Form","Location": "New York , US of America"},
+          {"Title": "Spring high School","Location": "Mumbai,Maharastra"},
+          {"Title": "Autumn high School","Location": "Pune,Maharastra"}
+        ]
+      };
+      const item = jobj.Events.map((obj) => <Event event={obj}/>
+      
+);
         return(
         <div>
-          
+          {console.log(jobj.Events)}
           {/* Container */}
           <div id="container">
             {/* page-banner-section 
@@ -27,12 +37,9 @@ class Events extends React.Component{
                 <div className="row">
                   <div className="col-lg-8">
                     <div className="events-box">
-                      <Event/>
-                      <Event/>
-                      <Event/>
-                      <Event/>
-                      <Event/>
-                      
+                    {item}
+
+                    
                     </div>
                   </div>
                   <div className="col-lg-4">
