@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Course extends React.Component{
+class Event extends React.Component{
     render(){
         return(
             <div className="events-post">
@@ -18,10 +18,11 @@ class Course extends React.Component{
                             <i className="material-icons">access_time</i> 6:00 am - 12:00 pm
                         </span>
                         <span className="event-meta-piece location">
-                            <i className="material-icons">location_on</i> New York , US of America
+                            <i className="material-icons">location_on</i> {this.props.event.Location}
                         </span>
                         </div>
-                        <h2 className="title"><a href="/SingleEvent">Summer High School Journalism Camp Registration Form</a></h2>
+                        
+                        <h2 className="title"><a href="/SingleEvent">{this.props.event.Title}</a></h2>
                     </div>
                     <a href="/SingleEvent" className="events-image"><img src="upload/events/events7.jpg" alt="" /></a>
                     </div>
@@ -30,4 +31,4 @@ class Course extends React.Component{
             )
     }
 }
-export default Course;
+export default Event;
