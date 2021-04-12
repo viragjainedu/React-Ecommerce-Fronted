@@ -4,6 +4,7 @@ import addItems from '../redux/actions/addItems';
 
 
 
+
 class SingleCourse extends React.Component{
   constructor(props){
     super(props);
@@ -11,7 +12,7 @@ class SingleCourse extends React.Component{
     fetch('https://464181bb-4558-4cc3-ad85-40c6bd63422d.mock.pstmn.io/SingleCourse/1234')
       .then(response => response.json())
       .then(json => console.log(json))
-    
+
       console.log(this.props.match.params.id)
   }
   

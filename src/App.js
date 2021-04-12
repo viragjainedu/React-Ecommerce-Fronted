@@ -27,6 +27,7 @@ import BlogGridLeftsidebar from './pages/blog-grid-leftsidebar';
 import Contact from './pages/contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 class App extends Component {
   render(){
   return (
@@ -38,13 +39,13 @@ class App extends Component {
         <Route  path="/Cart" component={Cart} />
         <Route exact path="/BlogGrid4" component={BlogGrid4} />
         <Route exact path="/SingleCourse/:id" component={SingleCourse} />
-        <Route exact path="/SingleEvent" component={SingleEvent} />
-        <Route exact path="/SinglePost" component={SinglePost} />
+        <Route exact path="/SingleEvent/:id" component={SingleEvent} />
+        <Route exact path="/SinglePost/:id" component={SinglePost} />
         <Route exact path="/Teachers" component={Teachers} />
         <Route exact path="/Checkout" component={Checkout} />
         <Route exact path="/Events" component={Event} />
         <Route exact path="/Pricing" component={Pricing} />
-        <Route exact path="/SingleTeacher" component={SingleTeacher} />
+        <Route exact path="/SingleTeacher/:id" component={SingleTeacher} />
         <Route exact path="/Portfolio" component={Portfolio} />
         <Route exact path="/SingleProject" component={SingleProject} />
         <Route exact path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />

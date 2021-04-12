@@ -1,3 +1,4 @@
+
 API's we need :
 1)List of Courses( info in response - course name,teacher,price,votes,rating,no_of_students)(sorted in order of no_of_students):
 2)List of Events( info in response - event name , time , date , cost, location)(sorted in order of booked_slots)
@@ -7,3 +8,19 @@ API's we need :
 6)Single Event(info in response - Full Event details)(find acc to id)
 7)Single BlogPost(info in response - Full BlogPost details)(find acc to id)
 8)Single Teacher(info in response - Full Teacher details)(find acc to id)
+
+Frontend HTML Done.
+Frontend React Done.
+Shopping Cart React Done.
+State management with mock API's done.
+
+MongoDB Schema Done
+Node Backend Login/signup 
+Node Backend Routes
+API's done.
+
+Next:
+Video player
+My account Page 
+Admin Forms/Routes
+
