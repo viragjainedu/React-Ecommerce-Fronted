@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import {createStore} from 'redux';
 import rootReducer from './redux/reducers/index';
-
+import {NotificationContainer} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
+    <NotificationContainer />
+
   </Provider>,
   document.getElementById('root')
 );

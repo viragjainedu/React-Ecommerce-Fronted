@@ -1,6 +1,6 @@
 import React from 'react';
 import Course from '../components/Course';
-
+import {NotificationManager} from 'react-notifications';
 class Teacher_Profile extends React.Component{
   constructor(props) {
     super(props);
@@ -12,11 +12,34 @@ class Teacher_Profile extends React.Component{
 
   handleChange(event) {
     const value = event.target.value;
+    
     this.setState({[event.target.name] : event.target.value});
   }
 
   handleSubmit(event) {
-    alert('Profile Details Updated for ' + this.state.name);
+    
+      if (this.state.email.length < 1) {
+        NotificationManager.error ('Please provide email!!');
+        return;
+      }
+      if (
+        !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test (
+          this.state.email
+        )
+      ) {
+        NotificationManager.error ('Invalid email format!!');
+        return;
+      }
+      
+        if(this.state.phone.length<10){
+        NotificationManager.error ('Please provide valid phone number!!');
+        return;
+        }
+  
+      
+    NotificationManager.success('Success message', 'Title here');
+    alert('An essay was submitted: ' + this.state.value);
+    
     event.preventDefault();
   }
     render(){
@@ -121,8 +144,7 @@ class Teacher_Profile extends React.Component{
                           </div>
                         </div>
                       </div>
-
-                      <input type="submit" value="Submit" />
+                      <button type="submit" value="Submit" >Update</button>
                     </form>
                     </div>
                   </div>

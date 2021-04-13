@@ -2079,7 +2079,7 @@ section.teachers-section {
         box-sizing: border-box;
      }
       
-    section.teachers-section .teacher-content form.contact-form button {
+    section.teachers-section .teacher-content form.contact-form button,section.teachers-section .profile-details form.contact-form button {
       color: #fff;
       text-align: center;
       border: 0;
@@ -2099,7 +2099,7 @@ section.teachers-section {
       -webkit-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       cursor: pointer; }
-      section.teachers-section .teacher-content form.contact-form button:hover {
+      section.teachers-section .teacher-content form.contact-form button,section.teachers-section .profile-details form.contact-form button:hover {
         opacity: 0.86; }
 
 .teacher-post {
