@@ -26,6 +26,7 @@ import SingleProject from './pages/single-project';
 import BlogGridLeftsidebar from './pages/blog-grid-leftsidebar';
 import Contact from './pages/contact';
 import Teacher_Profile from './pages/Teacher_Profile';
+import User_Profile from './pages/User_Profile'
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -52,6 +53,7 @@ class App extends Component {
         <Route exact path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
         <Route exact path="/Contact" component={Contact} />
         <Route exact path="/Teacher_Profile" component={Teacher_Profile} />
+        <Route exact path="/User_Profile" component={User_Profile} />
         <Route component={Error} />
       </Switch>
       <Footer/>
