@@ -3,10 +3,8 @@ import React from 'react';
 class Course extends React.Component{
   constructor(props){
     super(props);
-    // console.log(this.props)  
-    // console.log(this.props.coursename)  
-    // console.log(this.props.teacher)  
-    //here we will call api 
+  
+  
   }
     render(){
         return(

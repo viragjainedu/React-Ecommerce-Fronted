@@ -6,9 +6,10 @@ class Courses extends React.Component{
   constructor(props){
     super(props);
       this.state={
-        coursename : "How to make babies" ,
+        coursename : "Cryptocurrency 101" ,
         teacher : "Virag Jain"
       };
+      //call api
   }
       
     render(){

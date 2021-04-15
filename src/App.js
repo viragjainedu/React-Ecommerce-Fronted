@@ -29,6 +29,7 @@ import Teacher_Profile from './pages/Teacher_Profile';
 import User_Profile from './pages/User_Profile'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import VideoCourse from './pages/video-course';
 
 class App extends Component {
   render(){
@@ -39,6 +40,7 @@ class App extends Component {
         <Route exact={true} path="/" component={Home} />
         <Route  path="/Courses" component={Courses} />
         <Route  path="/Cart" component={Cart} />
+<<<<<<< HEAD
         <Route exact path="/BlogGrid4" component={BlogGrid4} />
         <Route exact path="/SingleCourse/:id" component={SingleCourse} />
         <Route exact path="/SingleEvent/:id" component={SingleEvent} />
@@ -54,6 +56,22 @@ class App extends Component {
         <Route exact path="/Contact" component={Contact} />
         <Route exact path="/Teacher_Profile" component={Teacher_Profile} />
         <Route exact path="/User_Profile" component={User_Profile} />
+=======
+        <Route  path="/BlogGrid4" component={BlogGrid4} />
+        <Route  path="/SingleCourse/:id" component={SingleCourse} />
+        <Route  path="/SingleEvent/:id" component={SingleEvent} />
+        <Route  path="/SinglePost/:id" component={SinglePost} />
+        <Route  path="/Teachers" component={Teachers} />
+        <Route  path="/Checkout" component={Checkout} />
+        <Route  path="/Events" component={Event} />
+        <Route  path="/Pricing" component={Pricing} />
+        <Route  path="/SingleTeacher/:id" component={SingleTeacher} />
+        <Route  path="/Portfolio" component={Portfolio} />
+        <Route  path="/SingleProject" component={SingleProject} />
+        <Route  path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
+        <Route  path="/Contact" component={Contact} />
+        <Route  path="/video-course" component={VideoCourse} />
+>>>>>>> 78e239035af9834824ce4a08ec0c33f1d58598b6
         <Route component={Error} />
       </Switch>
       <Footer/>
