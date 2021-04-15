@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import addItems from '../redux/actions/addItems';
+import removeItems from '../redux/actions/removeItems';
 
 
 
@@ -9,7 +9,7 @@ class Cart extends React.Component{
     super(props);
   }
 
-  render(){
+    render(){
         return(
 
             
@@ -40,35 +40,36 @@ class Cart extends React.Component{
                       <th className="product-thumbnail">&nbsp;</th>
                       <th className="product-name">Product</th>
                       <th className="product-price">Price</th>
-                      <th className="product-quantity">Quantity</th>
                       <th className="product-subtotal">Total</th>
                     </tr>
-                  </thead>
+                  </thead>                  
                   <tbody>
-                    <tr>
-                      <td className="product-remove">
-                        <a href="#" className="remove" onClick={() => {this.props.addItemHandler({product:""})}}>×</a>
-                      </td>
-                      <td className="product-thumbnail">
-                        <a href="#"><img src="./assets/upload/courses/thumb1.jpg" alt="" /></a>
-                      </td>
-                      <td className="product-name">
-                        <a href="#">Introduction Web Design with HTML</a>
-                      </td>
-                      <td className="product-price">
-                        $244.00
-                      </td>
-                      <td className="product-quantity">
-                        <input type="number" defaultValue={1} />
-                      </td>
-                      <td className="product-subtotal">$244.00</td>
-                    </tr>
-                    <tr className="coupon-line"> 
-                      <td colSpan={6} className="actions">
-                        <input type="text" name="coupon_code" placeholder="Coupon code" />
-                        <button type="submit">Update cart</button>
-                      </td>
-                    </tr>
+                    
+                        {
+
+                          this.props.newState.cart.map(
+                            (item,index) => 
+                            <tr>
+                          <td className="product-remove">
+                            <a href="#" className="remove" onClick={() => {this.props.removeItemHandler({index: index})}}>×</a>  
+                          </td>
+    
+                          <td className="product-thumbnail">
+                            <a href="#"><img src="./assets/upload/courses/thumb1.jpg" alt="" /></a>
+                          </td>
+                          <td className="product-name">
+                            <a href="#">{this.props.newState.cart[index]}</a>
+                          </td>
+                          <td className="product-price">
+                            {this.props.newState.price[index]}
+                          </td>
+                          <td className="product-subtotal">{this.props.newState.price[index]}</td>
+                          </tr>
+                  
+                            )
+                        }
+                      
+                    
                   </tbody>
                 </table>
               </div>
@@ -81,12 +82,34 @@ class Cart extends React.Component{
                     <tbody>
                       <tr className="cart-subtotal">
                         <th>Subtotal</th>
-                        <td>273.99</td>
+                          Rs. {
+                            this.props.newState.price.reduce(function(tot, arr) { 
+                              // return the sum with previous value
+                              return(tot + arr)
+                            
+                              // set initial value as 0
+                            },0)
+                          }
                       </tr>
-                      <tr className="order-total">
-                        <th>Total</th>
-                        <td>273.99</td>
+                      <tr className="cart-subtotal">
+                        <th>With GST</th>
+                          Rs. {
+                            this.props.newState.price.reduce(function(tot, arr) { 
+                              // return the sum with previous value
+                              return(tot + arr)
+                            
+                              // set initial value as 0
+                            },0)*0.18 + 
+                              this.props.newState.price.reduce(function(tot, arr) { 
+                                // return the sum with previous value
+                                return(tot + arr)
+                              
+                                // set initial value as 0
+                              },0)
+                          }
                       </tr>
+                      
+                      
                     </tbody>
                   </table>
                   <a href="/Checkout" className="checkout-button">Proceed to checkout</a>
@@ -111,7 +134,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return { 
-      addItemHandler:(item)=>dispatch(addItems(item))
+      removeItemHandler:(item)=>dispatch(removeItems(item))
   }
 }
 

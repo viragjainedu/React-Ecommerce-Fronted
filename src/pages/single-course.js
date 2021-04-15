@@ -2,9 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import addItems from '../redux/actions/addItems';
 
-
-
-
 class VideoCourse extends React.Component{
   constructor(props){
     super(props);
@@ -436,7 +433,7 @@ class VideoCourse extends React.Component{
                       <span className="price-label">Price</span>
                       <span className="amount"><del>$39.99</del> $29.99</span>
                     </p>
-                    <a className="button-one" href="#" onClick={()=>{this.props.addItemHandler({product:'How to make babies'})}}>Take this course</a>
+                    <a className="button-one" href="#" onClick={()=>{this.props.addItemHandler({product:'How to make babies', id: this.props.match.params.id , price: 69420})}}>Take this course</a>
                     <div className="product-meta-info-list">
                       <h3>Course Features</h3>
                       <div className="meta-info-unit">

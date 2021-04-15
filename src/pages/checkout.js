@@ -1,6 +1,12 @@
 import React from 'react';
+import {connect} from 'react-redux';
+
 
 class Checkout extends React.Component{
+  constructor(props){
+    super(props);
+  }
+
     render(){
         return(
         <div>
@@ -82,21 +88,50 @@ class Checkout extends React.Component{
                               <td>Product</td>
                               <td>Total</td>
                             </tr>
-                            <tr>
-                              <td className="name-pro">Introduction Web Design with HTML  × 1</td>
-                              <td>$244</td>
-                            </tr>
-                            <tr>
-                              <td className="name-pro">Distance Learning MBA Management  × 1</td>
-                              <td>$29.99</td>
-                            </tr>
+                            {
+                              this.props.newState.cart.map( (item,index) => 
+
+                              <tr>
+                                <td className="name-pro">{this.props.newState.cart[index]}</td>
+                                <td>{this.props.newState.price[index]}</td>
+                              </tr>
+
+                              )
+                            }
+                            
+                            
                             <tr className="order-total">
                               <th>Subtotal</th>
-                              <td>273.99</td>
+                              <td>
+                                  Rs. {
+                                this.props.newState.price.reduce(function(tot, arr) { 
+                                  // return the sum with previous value
+                                  return(tot + arr)
+                                
+                                  // set initial value as 0
+                                },0)
+                              }
+                              </td>
                             </tr>
                             <tr className="order-total">
                               <th>Total</th>
-                              <td className="total-price">273.99</td>
+                              <td className="">
+                              Rs. {
+                            this.props.newState.price.reduce(function(tot, arr) { 
+                              // return the sum with previous value
+                              return(tot + arr)
+                            
+                              // set initial value as 0
+                            },0)*0.18 + 
+                              this.props.newState.price.reduce(function(tot, arr) { 
+                                // return the sum with previous value
+                                return(tot + arr)
+                              
+                                // set initial value as 0
+                              },0)
+                          }
+
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -114,4 +149,18 @@ class Checkout extends React.Component{
       );
     }
   }
-  export default Checkout;
+
+  const mapStateToProps = state => {
+    return { 
+        newState : state._cartItems  
+    }
+  }
+  
+  const mapDispatchToProps = dispatch => {
+    return { 
+        // removeItemHandler:(item)=>dispatch(removeItems(item))
+    }
+  }
+  
+  export default connect(mapStateToProps,mapDispatchToProps)(Checkout);
+  
