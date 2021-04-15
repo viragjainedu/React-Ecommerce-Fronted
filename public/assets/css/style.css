@@ -131,7 +131,7 @@ header {
     .top-line .right-top-line button {
       display: inline-block;
       width: 56px;
-      heght: 56px;
+      height: 56px;
       text-align: center;
       color: rgba(255, 255, 255, 0.75);
       background-color: rgba(0, 0, 0, 0.15);
@@ -2071,7 +2071,15 @@ section.teachers-section {
       font-size: 14px; }
     section.teachers-section .teacher-content form.contact-form textarea {
       height: 100px; }
-    section.teachers-section .teacher-content form.contact-form button {
+    section.teachers-section .profile-details form.contact-form textarea{
+      
+        width: 200%;
+        padding: 10px 15px;
+        margin: 5px 0;
+        box-sizing: border-box;
+     }
+      
+    section.teachers-section .teacher-content form.contact-form button,section.teachers-section .profile-details form.contact-form button {
       color: #fff;
       text-align: center;
       border: 0;
@@ -2091,7 +2099,7 @@ section.teachers-section {
       -webkit-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       cursor: pointer; }
-      section.teachers-section .teacher-content form.contact-form button:hover {
+      section.teachers-section .teacher-content form.contact-form button,section.teachers-section .profile-details form.contact-form button:hover {
         opacity: 0.86; }
 
 .teacher-post {

@@ -110,7 +110,7 @@ class Header extends React.Component{
                       <li><Link to="/Events">Events</Link></li>
                       <li><Link to="/Contact">Contact</Link></li>
                     </ul>
-                    <a href="#" className="register-modal-opener login-button"><i className="material-icons">perm_identity</i>My Account</a>
+                    <a href="/Teacher_Profile" className="register-modal-opener login-button"><i className="material-icons">perm_identity</i>My Account</a>
                   </div>
                 </div>
               </nav>

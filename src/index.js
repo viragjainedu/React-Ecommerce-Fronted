@@ -7,12 +7,46 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import {createStore} from 'redux';
 import rootReducer from './redux/reducers/index';
+import {NotificationContainer} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 
-const store = createStore(rootReducer);
+
+const loadState = () => {
+  try {
+    const serializedState = localStorage.getItem('state');
+    if(serializedState === null) {
+      return undefined;
+    }
+    return JSON.parse(serializedState);
+  } catch (e) {
+    return undefined;
+  }
+};
+
+const saveState = (state) => {
+  try {
+    const serializedState = JSON.stringify(state);
+    localStorage.setItem('state', serializedState);
+  } catch (e) {
+    // Ignore write errors;
+  }
+};
+
+const persistedState = loadState();
+
+const store = createStore(rootReducer , persistedState );
+
+store.subscribe(() => {
+  saveState(store.getState());
+});
+
+
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
+    <NotificationContainer />
+
   </Provider>,
   document.getElementById('root')
 );
