@@ -2,9 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import addItems from '../redux/actions/addItems';
 
-
-
-
 class VideoCourse extends React.Component{
   constructor(props){
     super(props);
