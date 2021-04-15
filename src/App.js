@@ -40,23 +40,6 @@ class App extends Component {
         <Route exact={true} path="/" component={Home} />
         <Route  path="/Courses" component={Courses} />
         <Route  path="/Cart" component={Cart} />
-<<<<<<< HEAD
-        <Route exact path="/BlogGrid4" component={BlogGrid4} />
-        <Route exact path="/SingleCourse/:id" component={SingleCourse} />
-        <Route exact path="/SingleEvent/:id" component={SingleEvent} />
-        <Route exact path="/SinglePost/:id" component={SinglePost} />
-        <Route exact path="/Teachers" component={Teachers} />
-        <Route exact path="/Checkout" component={Checkout} />
-        <Route exact path="/Events" component={Event} />
-        <Route exact path="/Pricing" component={Pricing} />
-        <Route exact path="/SingleTeacher/:id" component={SingleTeacher} />
-        <Route exact path="/Portfolio" component={Portfolio} />
-        <Route exact path="/SingleProject" component={SingleProject} />
-        <Route exact path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
-        <Route exact path="/Contact" component={Contact} />
-        <Route exact path="/Teacher_Profile" component={Teacher_Profile} />
-        <Route exact path="/User_Profile" component={User_Profile} />
-=======
         <Route  path="/BlogGrid4" component={BlogGrid4} />
         <Route  path="/SingleCourse/:id" component={SingleCourse} />
         <Route  path="/SingleEvent/:id" component={SingleEvent} />
@@ -71,7 +54,6 @@ class App extends Component {
         <Route  path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
         <Route  path="/Contact" component={Contact} />
         <Route  path="/video-course" component={VideoCourse} />
->>>>>>> 78e239035af9834824ce4a08ec0c33f1d58598b6
         <Route component={Error} />
       </Switch>
       <Footer/>
