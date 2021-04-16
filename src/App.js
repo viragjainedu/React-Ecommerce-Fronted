@@ -29,6 +29,7 @@ import Teacher_Profile from './pages/Teacher_Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import VideoCourse from './pages/video-course';
+import addToCourse from './pages/addToCourse';
 
 class App extends Component {
   render(){
@@ -53,6 +54,7 @@ class App extends Component {
         <Route  path="/BlogGridLeftsidebar" component={BlogGridLeftsidebar} />
         <Route  path="/Contact" component={Contact} />
         <Route  path="/video-course" component={VideoCourse} />
+        <Route  path="/addToCourse" component={addToCourse} />
         <Route component={Error} />
       </Switch>
       <Footer/>

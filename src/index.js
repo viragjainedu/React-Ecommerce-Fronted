@@ -7,9 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import {createStore} from 'redux';
 import rootReducer from './redux/reducers/index';
+
 import {NotificationContainer} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
-
 
 const loadState = () => {
   try {
