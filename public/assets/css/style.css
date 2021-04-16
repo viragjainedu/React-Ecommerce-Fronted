@@ -2069,6 +2069,12 @@ section.teachers-section {
       -webkit-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       font-size: 14px; }
+      section.teachers-section  .scroll{
+        height: 700px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+      }
     section.teachers-section .teacher-content form.contact-form textarea {
       height: 100px; }
     section.teachers-section .profile-details form.contact-form textarea{
@@ -2081,6 +2087,7 @@ section.teachers-section {
       
     section.teachers-section .teacher-content form.contact-form button,section.teachers-section .profile-details form.contact-form button {
       color: #fff;
+      
       text-align: center;
       border: 0;
       padding: 11px 22px;
