@@ -10,15 +10,26 @@ function Header(props){
 class addToCourse extends React.Component{
   constructor(props){
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmitFile = this.handleSubmitFile.bind(this);
+    this.handleSubmitHeader = this.handleSubmitHeader.bind(this);
 
   }
   
-  handleSubmit(event) {
+  handleSubmitFile(event) {
     event.preventDefault();
     const data = new FormData(event.target);
     console.log(data);
     fetch('/api/form-submit-url', {
+      method: 'POST',
+      body: data,
+    });
+  }  
+  
+  handleSubmitHeader(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    console.log(data);
+    fetch('/api/header-submit-url', {
       method: 'POST',
       body: data,
     });
@@ -52,39 +63,24 @@ class addToCourse extends React.Component{
         </div>
       </div>
       <div className="panel-heading-right">
-        <a className="video-lesson-preview preview-button" href="https://www.youtube.com/watch?v=4BJY-bgHqtI">
-          <i className="fa fa-play-circle" />Preview
-        </a>
+
       </div>
     </div>
     
-    <div className="course-panel-heading">
-      <div className="panel-heading-left">
-        <div className="course-lesson-icon">
-          <i className="fa fa-files-o" />
-        </div>
-        <div className="title">
-          <h4>Project Files<span className="badge-item practice">practice</span></h4>
-          <p className="subtitle">Accessing the project files</p>
-        </div>
-      </div>
-      <div className="panel-heading-right">
-        <div className="private-lesson">
-          <i className="fa fa-lock" />
-          <span>Private</span>
-        </div>
-      </div>
-    </div>
     
     <div className="course-panel-heading">
-        <form onSubmit={this.handleSubmit} enctype="multipart/form-data">
+        <form onSubmit={this.handleSubmitFile} enctype="multipart/form-data">
             <input type="submit" class="btn btn-success" placeholder="Add a lecture"/>
             &nbsp;
             <input type="file" id="my-input" />
         </form>
     </div>
     
-    <button type="button" class="btn btn-secondary">Add Section</button>
+    <form onSubmit={this.handleSubmitHeader} >
+            <input type="text" class="" placeholder="Add a section"/>
+            &nbsp;
+            <input type="submit" id="my-input" />
+        </form>
   </div>
 </div>
 
@@ -96,9 +92,9 @@ class addToCourse extends React.Component{
         )}}
 
 const mapStateToProps = state => {
-return { 
-    newState : state._cartItems  
-}
+  return { 
+      newState : state._cartItems  
+  }
 }
 
 const mapDispatchToProps = dispatch => {

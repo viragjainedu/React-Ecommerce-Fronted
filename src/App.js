@@ -25,7 +25,7 @@ import Portfolio from './pages/portfolio';
 import SingleProject from './pages/single-project';
 import BlogGridLeftsidebar from './pages/blog-grid-leftsidebar';
 import Contact from './pages/contact';
-import Teacher_Profile from './pages/Teacher_Profile';
+// import Teacher_Profile from './pages/Teacher_Profile';
 import User_Profile from './pages/User_Profile'
 import Header from './components/Header';
 import Footer from './components/Footer';
